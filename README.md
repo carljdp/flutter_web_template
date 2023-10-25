@@ -28,7 +28,7 @@ flutter config --build-dir=build/ --enable-web --no-enable-linux-desktop --no-en
 
 flutter pub get
 
-flutter run --debug --hot --web-hostname=127.0.0.1 --web-port=8080 --base-href=/ --device-id=edge --web-renderer=html --no-web-resources-cdn
+flutter run --debug --hot --web-hostname=127.0.0.1 --web-port=8080 --device-id=edge --web-renderer=html --no-web-resources-cdn
 
 ```
 
