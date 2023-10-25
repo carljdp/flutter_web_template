@@ -1,3 +1,4 @@
+# =============================================================================
 # PROJECT SPECIFIC
 
 .env
@@ -7,6 +8,7 @@
 !example.env
 
 build/
+out/
 
 #
 # =============================================================================
@@ -72,7 +74,7 @@ doc/api/
 .flutter-plugins-dependencies
 
 ### Firebase ###
-.idea
+#.idea (duplicate)
 **/node_modules/*
 **/.firebaserc
 
@@ -201,7 +203,7 @@ cmake-build-*/
 *.iws
 
 # IntelliJ
-out/
+#out/ (duplicate)
 
 # mpeltonen/sbt-idea plugin
 .idea_modules/
@@ -398,11 +400,11 @@ proguard/
 *.log
 
 # Android Studio
-/*/build/
-/*/local.properties
-/*/out
-/*/*/build
-/*/*/production
+*/build/
+*/local.properties
+*/out
+*/*/build
+*/*/production
 captures/
 .navigation/
 *.ipr
@@ -427,7 +429,7 @@ obj/
 
 # IntelliJ IDEA
 *.iml
-/out/
+#out/ (duplicate)
 
 # User-specific configurations
 .idea/caches/
@@ -896,8 +898,8 @@ FodyWeavers.xsd
 # -*- mode: gitignore; -*-
 #*~ (duplicate)
 \#*\#
-/.emacs.desktop
-/.emacs.desktop.lock
+.emacs.desktop
+.emacs.desktop.lock
 *.elc
 auto-save-list
 tramp
@@ -911,17 +913,17 @@ tramp
 *_flymake.*
 
 # eshell files
-/eshell/history
-/eshell/lastdir
+eshell/history
+eshell/lastdir
 
 # elpa packages
-/elpa/
+elpa/
 
 # reftex files
 *.rel
 
 # AUCTeX auto folder
-/auto/
+auto/
 
 # cask packages
 .cask/
@@ -931,7 +933,7 @@ dist/
 flycheck_*.el
 
 # server auth directory
-/server/
+server/
 
 # projectiles files
 .projectile
@@ -940,7 +942,7 @@ flycheck_*.el
 .dir-locals.el
 
 # network security
-/network-security.data
+network-security.data
 
 
 ### SublimeText ###
@@ -1029,7 +1031,7 @@ xcuserdata/
 !*.xcodeproj/xcshareddata/
 !*.xcodeproj/project.xcworkspace/
 !*.xcworkspace/contents.xcworkspacedata
-/*.gcno
+*.gcno
 **/xcshareddata/WorkspaceSettings.xcsettings
 
 # End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,xcode,emacs,vim,sublimetext
